@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background: #dcacac;
+}
+
+.recept-kort{
+    max-width: 900px;
+    margin: 0 auto 40px;
+    background: white;
+    overflow: hidden;
+}
+
+.food {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: auto;
+}
+
+.content{
+    padding: 30px 40px 50px;
+}
+
+h1{
+    color: #a10000;
+    font-size: 1.7rem;
+    margin: 0 0 30px;
+}
+
+.lead{
+    background: rgb(192, 191, 191);
+    color: black;
+    padding: 15px 20px;
+    font-size: 0.9rem;
+    margin: 0 0 30px;
+
+}
+
+h2{
+    font-size: 1rem;
+    margin: 0 0 10px;
+    color:black;
+}
+
+.portioner{
+    font-size: 0.8rem;
+    color: black;
+    margin: 0 0 10px;
+}
+
+.ingredienser, .instruktioner{
+    margin-bottom: 30px;
+}
+
+.ingredienser ul,.instruktioner ol{
+    margin: 0;
+    padding-left: 20px;
+    line-height: 1.7;
+    color: black;
+    font-size: 0.9rem;
+}
+
+.ingredienser ul li::marker {
+    font-size: 0.8em;
+}
+
+.servering{
+    margin-bottom: 0;
+}
+
+.image-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.image-grid img{
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    object-position: center; 
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+}
